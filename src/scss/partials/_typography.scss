@@ -4,3 +4,19 @@ $body-font-family: 'Crimson Text', Palatino,Georgia,serif;
 $global-weight-normal: 400;
 $global-lineheight: 1.5;
 $body-font-color: $color-dark;
+
+// Calligraphy custom
+@font-face {
+    font-family: 'better_signatureregular';
+    src: url('../font/b_s-webfont.woff2') format('woff2'),
+         url('../font/b_s-webfont.woff') format('woff'),
+         url('../font/b_s-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-calligraphy {
+    font-family: 'better_signatureregular', cursive;
+    font-weight: normal;
+}
