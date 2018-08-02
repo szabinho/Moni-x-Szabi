@@ -1,11 +1,22 @@
 // Globals
-
 $color-dark: #1c1c1c;
 $color-light: #f5f5f5;
+$breakpoint-large: 45.5rem; // 45.5 * 16 = 728
 
+
+// Mixins
+@mixin larger-screen {
+  @media (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}
+
+//Imports
 @import 'vendor/_normalize.scss';
 @import 'partials/_typography.scss';
 
+
+//Styles
 body {
     margin: 0;
     padding: 0;
