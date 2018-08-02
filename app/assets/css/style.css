@@ -304,9 +304,29 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin: 0 0 1.5rem 0;
+  font-weight: 700; }
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3334;
+  margin: 0 0 1rem 0;
+  font-weight: 600; }
+
+p {
+  margin: 0 0 1rem; }
+
 .font-calligraphy {
   font-family: 'better_signatureregular', cursive;
   font-weight: normal; }
+
+h1.font-calligraphy {
+  font-size: 1.75rem;
+  line-height: 1.1429;
+  margin-bottom: 3rem; }
 
 body {
   margin: 0;
@@ -314,5 +334,6 @@ body {
   background: #fff;
   font-family: "Crimson Text", Palatino, Georgia, serif;
   font-weight: 400;
-  line-height: 1.5;
+  font-size: 1.125rem;
+  line-height: 1.3334;
   color: #1c1c1c; }
