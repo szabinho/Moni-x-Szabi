@@ -35,4 +35,20 @@ body {
     font-size: $body-font-size;
     line-height: $global-lineheight;
     color: $body-font-color;
-  }
+}
+
+.hero {
+    text-align: center;
+    color: $color-light;
+    background: $color-dark url(../img/moni-szabi-cover.jpg) top center;
+    background-size: cover;
+    height: 83vh;
+    padding-top: 6em;
+
+    @media screen and (orientation: landscape) {
+        background-image: url(../img/moni-szabi-cover--landscape.jpg);
+        height: 75vw;  
+    }
+}
+
+
