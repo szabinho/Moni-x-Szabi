@@ -376,3 +376,9 @@ body {
     .hero {
       background-image: url(../img/moni-szabi-cover--landscape.jpg);
       height: 75vw; } }
+
+.date {
+  margin: 2em 1.5em; }
+
+.date__headline {
+  margin-bottom: .5em; }
