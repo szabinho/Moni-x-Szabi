@@ -418,3 +418,10 @@ body {
 
 .rsvp__desc {
   margin-bottom: 1.5rem; }
+
+.dress-code {
+  padding: 0 1.5em;
+  margin-bottom: 2.5rem; }
+
+.dress-code__headline {
+  margin-bottom: 1.5rem; }
