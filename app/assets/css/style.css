@@ -338,14 +338,38 @@ p {
   font-family: 'better_signatureregular', cursive;
   font-weight: normal; }
 
-h1.font-calligraphy {
+.font-calligraphy {
   font-size: 1.75rem;
   line-height: 1.1429;
   margin-bottom: 3rem; }
   @media (min-width: 45.5rem) {
-    h1.font-calligraphy {
+    .font-calligraphy {
       font-size: 3rem;
       line-height: 1.1667; } }
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-family: inherit;
+  padding: .5rem 3rem;
+  -webkit-appearance: none;
+  border: 0.125rem solid #f5f5f5;
+  border-radius: .125rem;
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  -o-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  color: #f5f5f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .025em; }
+  .button:hover {
+    background-color: #2c2c2c; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -382,3 +406,15 @@ body {
 
 .date__headline {
   margin-bottom: .5em; }
+
+.rsvp {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  margin: 0 1.5rem 2.5rem 0;
+  padding: 2em 1.5em; }
+
+.rsvp__headline {
+  margin-bottom: 1.5rem; }
+
+.rsvp__desc {
+  margin-bottom: 1.5rem; }
