@@ -347,6 +347,15 @@ p {
       font-size: 3rem;
       line-height: 1.1667; } }
 
+a {
+  color: #1c1c1c;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed; }
+  a:hover {
+    -webkit-text-decoration-style: solid;
+            text-decoration-style: solid; }
+
 .button {
   display: inline-block;
   vertical-align: middle;
