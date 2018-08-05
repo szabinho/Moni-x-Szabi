@@ -86,4 +86,45 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.schedule {
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 2em 0;
+}
+
+.schedule__row {
+    margin: 0 1.5rem;
+}
+
+.schedule__first {
+    margin-bottom: 2rem;
+}
+
+.schedule__flag { 
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.schedule__media {
+    width: 82.5%
+}
+
+.schedule__info {
+    // transform-origin: top right;
+    display: inline-block;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    float: right;
+    width: 17.5%;
+}
+
+.schedule__second {
+    text-align: right;
+
+    & .schedule__info {
+        float: left;
+        transform: rotate(90deg);
+    }
+}
+
 
