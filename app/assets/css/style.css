@@ -413,7 +413,7 @@ body {
   margin: 0 1.5rem 2.5rem 0;
   padding: 2em 1.5em; }
 
-.rsvp__headline, .gift__headline {
+.rsvp__headline, .dress-code__headline, .gift__headline, .schedule__headline {
   margin-bottom: 1.5rem; }
 
 .rsvp__desc {
@@ -423,13 +423,15 @@ body {
   padding: 0 1.5em;
   margin-bottom: 2.5rem; }
 
-.dress-code__headline {
-  margin-bottom: 1.5rem; }
-
 .schedule {
   background-color: #1c1c1c;
   color: #f5f5f5;
-  padding: 2em 0; }
+  padding: 2em 0;
+  margin-bottom: 2.5rem; }
+
+.schedule__headline {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
 
 .schedule__row {
   margin: 0 1.5rem; }

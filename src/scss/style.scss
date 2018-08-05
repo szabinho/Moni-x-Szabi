@@ -68,7 +68,7 @@ body {
     padding: 2em 1.5em;
 }
 
-.rsvp__headline, .gift__headline {
+.rsvp__headline, .dress-code__headline, .gift__headline, .schedule__headline {
     margin-bottom: 1.5rem;
 }
 
@@ -82,14 +82,16 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.dress-code__headline {
-    margin-bottom: 1.5rem;
-}
-
 .schedule {
     background-color: $color-dark;
     color: $color-light;
     padding: 2em 0;
+    margin-bottom: 2.5rem;
+}
+
+.schedule__headline {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .schedule__row {
