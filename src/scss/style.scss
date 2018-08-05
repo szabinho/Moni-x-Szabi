@@ -39,6 +39,34 @@ body {
     color: $body-font-color;
 }
 
+.headline-pipe {
+    position: relative;
+    padding-top: 1rem;
+
+    &:before {
+        display: inline-block;
+        content: "";
+        height: .25rem;
+        width: 2.5rem;
+        position: absolute;
+        background: $color-dark;
+        top: -.25rem;
+    }
+}
+
+.headline-pipe--light {
+    &:before { background: $color-light; }
+}
+
+.headline-pipe--small {
+    padding-top: .5rem;
+    &:before { height: .125rem; }
+}
+
+.headline-pipe--right {
+    &:before { right: 0; }
+}
+
 .hero {
     text-align: center;
     color: $color-light;

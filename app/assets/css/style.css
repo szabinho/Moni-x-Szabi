@@ -389,6 +389,29 @@ body {
   line-height: 1.3334;
   color: #1c1c1c; }
 
+.headline-pipe {
+  position: relative;
+  padding-top: 1rem; }
+  .headline-pipe:before {
+    display: inline-block;
+    content: "";
+    height: .25rem;
+    width: 2.5rem;
+    position: absolute;
+    background: #1c1c1c;
+    top: -.25rem; }
+
+.headline-pipe--light:before {
+  background: #f5f5f5; }
+
+.headline-pipe--small {
+  padding-top: .5rem; }
+  .headline-pipe--small:before {
+    height: .125rem; }
+
+.headline-pipe--right:before {
+  right: 0; }
+
 .hero {
   text-align: center;
   color: #f5f5f5;
@@ -418,6 +441,13 @@ body {
 
 .rsvp__desc {
   margin-bottom: 1.5rem; }
+
+.logo-separator {
+  text-align: center;
+  margin: 4rem 0 5rem 0; }
+
+.logo-separator__logo {
+  width: 50%; }
 
 .dress-code, .gift, .photos {
   padding: 0 1.5em;
