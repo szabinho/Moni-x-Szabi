@@ -413,13 +413,13 @@ body {
   margin: 0 1.5rem 2.5rem 0;
   padding: 2em 1.5em; }
 
-.rsvp__headline {
+.rsvp__headline, .gift__headline {
   margin-bottom: 1.5rem; }
 
 .rsvp__desc {
   margin-bottom: 1.5rem; }
 
-.dress-code {
+.dress-code, .gift {
   padding: 0 1.5em;
   margin-bottom: 2.5rem; }
 
