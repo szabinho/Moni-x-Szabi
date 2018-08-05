@@ -40,24 +40,38 @@
   </section>
   <img src="" alt="Móni és Szabi kezdőbetüi egy virág körül">
   <section class="schedule">
-    <h1 class="font-calligraphy">Menetrend</h1>
-    <div>
-      <p>16:00 ~ 16:30</p>
-      <h2>Templomi szertartás</h2>
-      <p>Budapest-Belvárosi Nagyboldogasszony Főplébánia-templom</p>
-      <img src="" alt="A kép a Duna budai oldaláról fényképezve a Nagyboldogasszony templomot (bal oldalt) és az Erzsébet hidat (jobb oldalt) mutatja.">
-      <p>Budapest, Március 15. tér, 1056</p>
-      <p>Házasságot kötünk. Szabi már 15:30-tól vár titeket. Aki késik, lemarad, nem lesz ott. Autóval érkezők a híd alatti részen vagy a Millenium Center Parkoló Házban tudnak parkolni.</p>
-      <a href="https://goo.gl/maps/NgjnW5ZVKm92">Térkép</a>
+    <h1 class="schedule__row font-calligraphy">Menetrend</h1>
+    <div class="schedule__first">
+      <div class="schedule__row">
+        <p>16:00 ~ 16:30</p>
+        <h2>Templomi szertartás</h2>
+        <p>Budapest-Belvárosi Nagyboldogasszony Főplébánia-templom</p>
+      </div>
+      <div class="schedule__flag">
+        <img class="schedule__media" src="app/assets/media/nagyboldogasszony-templom.jpg" alt="A kép a Duna budai oldaláról fényképezve a Nagyboldogasszony templomot (bal oldalt) és az Erzsébet hidat (jobb oldalt) mutatja.">
+        <p class="schedule__info">Budapest, Március 15. tér, 1056</p>
+        <!-- TODO: change to address tag -->
+      </div>
+      <div class="schedule__row">
+        <p>Házasságot kötünk. Szabi már 15:30-tól vár titeket. Aki késik, lemarad, nem lesz ott. Autóval érkezők a híd alatti részen vagy a Millenium Center Parkoló Házban tudnak parkolni.</p>
+        <a class="button" href="https://goo.gl/maps/NgjnW5ZVKm92">Térkép</a>
+      </div>
     </div>
-    <div>
-      <p>17:30 ~ ameddig bírjuk</p>
-      <h2>Vacsora és tánc</h2>
-      <p>Flashback Studió</p>
-      <img src="" alt="Régi gyárépület belülről fekete vas oszlopokkal, téglafallal és kazettás ipari ablakokkal">
-      <p>Budapest, Bogdáni út 1, 1033</p>
-      <p>Tömegközlekedéssel is át tudtok jutni a templomból a 2-es villamos, 4-6-os villamos és Szentendrei Hév vonalon a Fillatorigát megállótól két perc sétával.</p>
-      <a href="https://goo.gl/maps/HFH46Cddb9m">Térkép</a>
+    <div class="schedule__second">
+      <div class="schedule__row">
+        <p>17:30 ~ ameddig bírjuk</p>
+        <h2>Vacsora és tánc</h2>
+        <p>Flashback Studió</p>
+      </div>
+      <div class="schedule__flag">
+        <p class="schedule__info">Budapest, Bogdáni út 1, 1033</p>
+        <!-- TODO: change to address tag -->
+        <img class="schedule__media" src="app/assets/media/flashback.jpg" alt="Régi gyárépület belülről fekete vas oszlopokkal, téglafallal és kazettás ipari ablakokkal">
+      </div>
+      <div class="schedule__row">
+        <p>Tömegközlekedéssel is át tudtok jutni a templomból a 2-es villamos, 4-6-os villamos és Szentendrei Hév vonalon a Fillatorigát megállótól két perc sétával.</p>
+        <a class="button" href="https://goo.gl/maps/HFH46Cddb9m">Térkép</a>
+      </div>
     </div>
   </section>
   <section class="gift">
