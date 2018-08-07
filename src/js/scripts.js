@@ -86,8 +86,6 @@
                 return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
             });
 
-            console.log(clickedListItem);
-
             if(!clickedListItem) {
                 return;
             }
@@ -99,11 +97,6 @@
                 numChildNodes = childNodes.length,
                 nodeIndex = 0,
                 index;
-
-            console.log('clickedGallery');
-            console.log(clickedGallery);
-            console.log('childNodes');
-            console.log(childNodes);
 
             for (var i = 0; i < numChildNodes; i++) {
                 if(childNodes[i].nodeType !== 1) { 
