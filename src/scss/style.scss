@@ -167,4 +167,97 @@ body {
     }
 }
 
+.photos {
+    overflow: hidden;
+}
+
+.ph__row {
+    margin-bottom: 3rem;
+
+    &:before, &:after {
+        display: table;
+        content: ' ';
+    }
+}
+
+.ph__item1 {
+    width: 66.6667%;
+    vertical-align: middle;
+}
+
+.ph__hashtag {
+    text-align: right;
+    margin-bottom: 0;
+    display: inline-block;
+    transform: rotate(90deg) translateX(100%);
+    float: right;
+    transform-origin: top right;
+    padding-left: 5%;
+}
+
+.ph__item2 {
+    width: 33.3334%;
+    padding-right: 1rem;
+    margin: 0;
+    font-size: .8em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ph__item3 {
+    width: 50%;
+    vertical-align: middle;
+}
+
+.ph__item4, .ph__item5 {
+    width: 33%;
+    margin-left: 16%;
+    vertical-align: middle;
+}
+
+.ph__img { 
+    width: 100%;
+    vertical-align: middle;
+}
+
+.ph__item6, 
+.ph__item7,
+.ph__item9,
+.ph__item10,
+.ph__item11,
+.ph__item12,
+.ph__item13,
+.ph__item14 { 
+    width: 50%; 
+    float: left;
+    margin: 0 0 .5rem 0; 
+}
+
+.ph__item5-1,
+.ph__item8,
+.ph__item15 { 
+    width: 100%;
+    float: left;
+    margin: 0 0 .5rem 0;
+}
+
+.ph__item6,
+.ph__item9,
+.ph__item11,
+.ph__item13 {
+    padding-right: .25rem;
+}
+
+.ph__item7,
+.ph__item10,
+.ph__item12,
+.ph__item14 {
+    padding-left: .25rem;
+}
+
+
+
+
+
+
 
