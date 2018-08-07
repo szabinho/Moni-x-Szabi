@@ -172,6 +172,8 @@
 
             };
 
+            options.shareEl = false;
+
             // PhotoSwipe opened from URL
             if(fromURL) {
                 if(options.galleryPIDs) {
