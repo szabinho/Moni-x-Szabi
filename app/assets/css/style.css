@@ -514,7 +514,9 @@ body {
 
 .ph__item1 {
   width: 66.6667%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 0;
+  display: inline-block; }
 
 .ph__hashtag {
   text-align: right;
@@ -539,12 +541,15 @@ body {
 
 .ph__item3 {
   width: 50%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 0;
+  display: inline-block; }
 
 .ph__item4, .ph__item5 {
   width: 33%;
-  margin-left: 16%;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 0 0 0 16%;
+  display: inline-block; }
 
 .ph__img {
   width: 100%;
