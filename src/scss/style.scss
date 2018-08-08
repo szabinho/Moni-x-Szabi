@@ -1,0 +1,370 @@
+// Globals
+$color-dark: #1c1c1c;
+$color-light: #f5f5f5;
+$color-dark--highlight: #2c2c2c;
+$breakpoint-large: 48rem; // 45.5 * 16 = 768
+
+
+// Mixins
+@mixin larger-screen {
+  @media (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}
+
+//Imports
+@import 'vendor/_normalize.scss';
+@import 'partials/_typography.scss';
+@import 'partials/_buttons.scss';
+
+
+//Styles
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: $body-background;
+
+    font-family: $body-font-family;
+    font-weight: $global-weight-normal;
+    font-size: $body-font-size;
+    line-height: $global-lineheight;
+    color: $body-font-color;
+}
+
+.headline-pipe {
+    position: relative;
+    padding-top: 1rem;
+
+    &:before {
+        display: inline-block;
+        content: "";
+        height: .25rem;
+        width: 2.5rem;
+        position: absolute;
+        background: $color-dark;
+        top: -.25rem;
+    }
+}
+
+.headline-pipe--light {
+    &:before { background: $color-light; }
+}
+
+.headline-pipe--small {
+    padding-top: .5rem;
+    &:before { height: .125rem; }
+}
+
+.headline-pipe--right {
+    &:before { right: 0; }
+}
+
+.hero {
+    text-align: center;
+    color: $color-light;
+    background: $color-dark url(../img/moni-szabi-cover.jpg) top center;
+    background-size: cover;
+    height: 83vh;
+    padding-top: 6em;
+
+    @media screen and (orientation: landscape) {
+        background-image: url(../img/moni-szabi-cover--landscape.jpg);
+        height: 75vw;  
+    }
+}
+
+.date {
+    margin: 2em 1.5em;
+    @include larger-screen {
+        width: 30rem;
+        margin: 3em auto;
+        text-align: center;
+    }
+    
+    .headline-pipe:before {
+        @include larger-screen {
+            left:50%;
+            margin-left: -1.25rem;
+        }
+    }
+}
+
+.date__headline {
+    margin-bottom: .5em;
+}
+
+.rsvp {
+    background-color: $color-dark;
+    color: $color-light;
+    margin: 0 1.5rem 2.5rem 0;
+    padding: 2em 1.5em;
+    position: relative;
+    
+    @include larger-screen {
+        width: 45.5rem;
+        margin: 3em auto;
+
+        &:before {
+            content: '';
+            display: block;
+            z-index: -1;
+            position: absolute;
+            top:0;
+            bottom:0;
+            width: 50vw;
+            transform: translateX(-50vw);
+            background:$color-dark;
+        }
+    }
+}
+
+.rsvp__headline, .dress-code__headline, .gift__headline, .schedule__headline, .photos__headline {
+    margin-bottom: 1.5rem;
+}
+
+.rsvp__desc {
+    margin-bottom: 1.5rem;
+
+}
+
+.logo-separator { 
+    text-align: center;
+    margin: 4rem 0 5rem 0;
+
+    @include larger-screen {
+        width: 50%;
+        float:left;
+    }
+}
+
+.logo-separator__logo {
+    width: 50%;
+}
+
+.dress-code, .gift, .photos {
+    padding: 0 1.5em;
+    margin-bottom: 2.5rem;
+
+     @include larger-screen {
+        width: 45.5rem;
+        margin: 3.5em auto;
+    }
+}
+
+.dress-code {
+    @include larger-screen {
+        width: 50%;
+        float:right;
+        margin: 3.5em 0;
+    }
+}
+
+.large-screen-row {
+    @include larger-screen {
+        width: 45.5rem;
+        margin: 0 auto;
+        &:before, &:after {
+            display: table;
+            content: ' ';
+        }
+    } 
+}
+
+.schedule {
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 2em 0;
+    margin-bottom: 2.5rem;
+    clear: both;
+    @include larger-screen {
+        margin-bottom: 3.5rem;
+        padding-top: 4rem;
+    }
+}
+
+.schedule__headline {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    @include larger-screen {
+        text-align: center;
+    }
+}
+
+.schedule__row {
+    margin: 0 1.5rem;
+    @include larger-screen {
+        margin: auto;
+    }
+}
+
+.schedule__first {
+    margin-bottom: 2rem;
+    @include larger-screen {
+        width: 45.5rem;
+        margin: 2em auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.schedule__flag { 
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.schedule__media {
+    width: 82.5%
+}
+
+.schedule__info {
+    display: inline-block;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    float: right;
+    width: 17.5%;
+    font-style: normal;
+    font-size: 1rem;
+    @media (min-width: 23rem )  {
+        padding-left: 6%;
+    }
+    @include larger-screen {
+        font-size: 1.5rem;
+        padding-left: 10%;
+    }
+}
+
+.schedule__second {
+    text-align: right;
+
+    @include larger-screen {
+        width: 45.5rem;
+        margin: 2em auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    & .schedule__info {
+        float: left;
+        transform: rotate(90deg);
+    }
+}
+
+.photos {
+    overflow: hidden;
+}
+
+.ph {
+    margin-top: 2rem;
+    @include larger-screen {
+        margin-top: 3rem;
+    }
+}
+
+.ph__row {
+    margin-bottom: 3rem;
+
+    &:before, &:after {
+        display: table;
+        content: ' ';
+    }
+}
+
+.ph__item1 {
+    width: 66.6667%;
+    vertical-align: middle;
+    margin: 0;
+    display: inline-block;
+}
+
+.ph__hashtag {
+    text-align: right;
+    margin-bottom: 0;
+    display: inline-block;
+    transform: rotate(90deg) translateX(125%);
+    float: right;
+    transform-origin: top right;
+    @media (min-width: 25rem) {
+        transform: rotate(90deg) translateX(150%) translateY(100%);
+    }
+}
+
+.ph__item2 {
+    width: 33.3334%;
+    padding-right: 1rem;
+    margin: 0;
+    font-size: .8em;
+    display: inline-block;
+    vertical-align: middle;
+    @include larger-screen {
+        font-size: 1.25em;
+    }
+}
+
+.ph__item3 {
+    width: 50%;
+    vertical-align: middle;
+    margin: 0;
+    display: inline-block;
+}
+
+.ph__item4, .ph__item5 {
+    width: 33%;
+    vertical-align: middle;
+    margin: 0 0 0 16%;
+    display: inline-block;
+}
+
+.ph__img { 
+    width: 100%;
+    vertical-align: middle;
+}
+
+.ph__item6, 
+.ph__item7,
+.ph__item9,
+.ph__item10,
+.ph__item11,
+.ph__item12,
+.ph__item13,
+.ph__item14 { 
+    width: 50%; 
+    float: left;
+    margin: 0 0 .5rem 0; 
+}
+
+.ph__item5-1,
+.ph__item8,
+.ph__item15 { 
+    width: 100%;
+    float: left;
+    margin: 0 0 .5rem 0;
+}
+
+.ph__item6,
+.ph__item9,
+.ph__item11,
+.ph__item13 {
+    padding-right: .25rem;
+}
+
+.ph__item7,
+.ph__item10,
+.ph__item12,
+.ph__item14 {
+    padding-left: .25rem;
+}
+
+
+
+
+
+
+

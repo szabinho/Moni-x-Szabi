@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-family: inherit;
+    padding: .5rem 3rem;
+    -webkit-appearance: none;
+    border: .125rem solid $color-light;
+    border-radius: .125rem;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: $color-light;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+
+    &:hover {
+        background-color: $color-dark--highlight;
+    }
+}
