@@ -3,7 +3,7 @@
     vertical-align: middle;
     margin: 0;
     font-family: inherit;
-    padding: .5rem 3rem;
+    padding: .5em 3em;
     -webkit-appearance: none;
     border: .125rem solid $color-light;
     border-radius: .125rem;
@@ -20,5 +20,9 @@
 
     &:hover {
         background-color: $color-dark--highlight;
+    }
+
+    @include larger-screen {
+        font-size: 1.125rem; // 1.125 * 16 = 18
     }
 }
