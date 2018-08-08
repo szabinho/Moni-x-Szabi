@@ -102,21 +102,27 @@ body {
 }
 
 .rsvp {
-    @include larger-screen {
-        background-color: $color-dark;
-        margin-right: 50%;
-    }
-}
-
-.rsvp__inner {
     background-color: $color-dark;
     color: $color-light;
     margin: 0 1.5rem 2.5rem 0;
     padding: 2em 1.5em;
+    position: relative;
     
     @include larger-screen {
         width: 45.5rem;
-        margin: 3em -50% 3em auto;
+        margin: 3em auto;
+
+        &:before {
+            content: '';
+            display: block;
+            z-index: -1;
+            position: absolute;
+            top:0;
+            bottom:0;
+            width: 50vw;
+            transform: translateX(-50vw);
+            background:$color-dark;
+        }
     }
 }
 
