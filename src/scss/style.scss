@@ -210,6 +210,8 @@ body {
     @include larger-screen {
         width: 45.5rem;
         margin: 2em auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 
@@ -245,6 +247,8 @@ body {
     @include larger-screen {
         width: 45.5rem;
         margin: 2em auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     & .schedule__info {
