@@ -168,7 +168,7 @@ body {
     width: 50%;
 }
 
-.dress-code, .gift, .photos {
+.dress-code, .gift, .photos, {
     padding: 0 1.5em;
     margin-bottom: 2.5rem;
 
@@ -381,6 +381,56 @@ body {
     padding-left: .25rem;
 }
 
+.sub-nav__title {
+    text-align: center;
+    padding: .5em 0;
+}
+
+.sub-nav__back-to-home {
+    position: absolute;
+    top: 3rem;
+    padding-left: 1rem;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.pasta-hero {
+    padding: 0 1.5em;
+    margin-bottom: 2.5rem;
+    text-align: center;
+
+     @include larger-screen {
+        width: 60rem;
+        margin: 3.5em auto;
+    }
+}
+
+.pasta-hero__headline {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.pasta-hero__main-image {
+    width: 70%;
+    margin: 0 0 2.5rem;
+}
+
+.pasta-making {
+    text-align: left;
+}
+
+.pasta-making__copy {
+    float: left;
+    width: 50%;
+}
+
+.pasta-making__image {
+    width: 50%;
+    float: right;
+}
 
 
 
