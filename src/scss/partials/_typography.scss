@@ -41,7 +41,7 @@ h2 {
     }
 }
 
-p {
+p,ul {
     margin: 0 0 1rem;
 
     @include larger-screen {

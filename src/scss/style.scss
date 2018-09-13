@@ -381,55 +381,68 @@ body {
     padding-left: .25rem;
 }
 
-.sub-nav__title {
+.sub-nav {
     text-align: center;
-    padding: .5em 0;
 }
 
-.sub-nav__back-to-home {
-    position: absolute;
-    top: 3rem;
-    padding-left: 1rem;
+.sub-nav__title {
+    padding: 1em 0;
+}
+
+.sub-nav__back-to-home a {
     text-decoration: none;
+    margin-top: .5rem;
 
     &:hover {
         text-decoration: underline;
     }
+
+    @include larger-screen {
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+    }
 }
 
-.pasta-hero {
+.pasta-hero, .pasta-recipe {
     padding: 0 1.5em;
     margin-bottom: 2.5rem;
-    text-align: center;
 
      @include larger-screen {
-        width: 60rem;
+        width: 45.5rem;
         margin: 3.5em auto;
     }
 }
 
 .pasta-hero__headline {
     margin-bottom: 2.5rem;
-    text-align: center;
 }
 
 .pasta-hero__main-image {
-    width: 70%;
-    margin: 0 0 2.5rem;
-}
-
-.pasta-making {
-    text-align: left;
+    margin: 0 -5rem 2.5rem -5rem;
+    width: calc(100% + 10rem);
 }
 
 .pasta-making__copy {
-    float: left;
-    width: 50%;
+    text-align: left
 }
 
 .pasta-making__image {
-    width: 50%;
-    float: right;
+    width: 100%;
+}
+
+.pasta-recipe {
+    img {
+        width: 100%;
+    }
+}
+
+.ingredients-list {
+    padding-left: 0;
+}
+
+.ingredients-image {
+    margin-bottom: 3rem;
 }
 
 
